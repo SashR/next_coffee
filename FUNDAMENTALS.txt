@@ -1,0 +1,83 @@
+********************            6: Section Overview                 ************************
+-- Next.js can be a full stack solution
+-- It has both pros and cons over pure React
+-- You will learn what it is, why is it popular and when to use it
+
+
+********************            7: What is next.js                 ************************
+-- It is a framework built on top of React that gives you the flexibility of building scalable apps by allowing you to 
+    render content on the server.
+-- You will also be building backend via a node server that provided out of the box.
+-- Very flexible, can choose when to use SSR, CSR or a mixture.
+
+
+
+
+********************            8:  Learn react fundamentals                 ************************
+********************            9: Benefits of Next.js and different rendering techniques                 ************************
+-- Different rendering techniques:
+        - Static Site generations (SSG) (Products; blog stores; coffee site example; general marketting content)  -- BUILD TIME generations
+            -- All content prebuilt on server; server passes content to client and is cached. Client fetches cached content over and over;
+                very high performance
+        - Server Side rendering (SSR) E.g. Dynamic news feed, Netflix           -- GENERATE PAGE ON THE Server
+            -- Content render on server each tine on refresh; dynamic content
+        - Incremental Side Regeneration (ISR) -- Static plus server, infinite scrolling features            -- GENERATE PAGE
+            ON BUILD IN ADVANCE + SERVER AFTER
+
+        Client (Browser)    -- Server (Node.js)
+
+
+********************            10: Performance with Next.js                  ************************
+-- Building Performant apps are hard; next extrapolates alot of this
+-- Code splitting is when you divide you web app in to small chunks so you can only load the chunk that is used by the current PAGE
+-- React needs additional packages and extra knowledge; while this is down by next out of the box
+-- next build creates an optimized build of your app for you to deploy
+-- Next also minifies code; removing special chars and whitespace; shrinking the file size further hence app is more Performant
+-- React needs webpack to handle this; which can be completed. Still need some of this domain knowledge
+
+-- Next provides an Image component; which automatically optimizes images. This again boosts performance.
+-- Next serves the image size based on the browser size; automatic resizing. Also other cool features are available
+-- Pre-fetching assets -- next will fetch assets as you scroll
+
+
+********************            11: Image component with Next.js                 ************************
+-- Using chrome devtools we can see the sizes of next js images changing as you change the window size and refresh.
+-- Lower file sizes for mobile users makes sites more performant and less costly for the users
+-- we can also see images being download on scroll, just before the image comes into the viewport
+
+
+********************            12: File based routing and seo                 ************************
+-- Allows for easy routing based on file locations
+-- Files inside pages directory are treated as routes
+-- /pages/catalog/product.tsx is treated as a route, which can be passed to a link component. Dynamic routes are also available.
+    The next routing system, also applies code splitting to the routes; boosting performance
+-- React requires react router library to provide similar but inferior functionality
+
+-- The api folder under pages will hold all backend logic; any route there is a server side route
+
+-- Search Engine Optimization -- a language for web crawlers.
+-- Good titles, metadata; good semantic HTML;  improves SEO ranking (allows bots to understand it better)
+-- a higher rank allows the site to be more discoverable on google
+
+-- Next provides a head component allowing easily update the title for each page
+
+
+********************            13: wEB DEV MONTHLY                 ************************
+********************            14: Severless functions in Next                 ************************
+-- Found inside API folder.
+-- Allow for backend logic to be handled by next, making it fullstack
+-- Only runs when needed
+-- Can talk to databases
+
+
+********************            15: next.js vs create-react-app                ************************
+-- Provides alot of functionality out of box that needs to be configured, installed, setup via create-react-app
+-- Webpack is also needed knowledge, but not for next.js
+-- Knowledge of these concepts are still needed (domain knowledge) 
+-- Complex of choice gets avoided
+-- Rendering techniques are easily setup and switchable in next.js
+-- cra is still usable for small apps
+
+
+********************            16: Linked in endorsments                 ************************
+
